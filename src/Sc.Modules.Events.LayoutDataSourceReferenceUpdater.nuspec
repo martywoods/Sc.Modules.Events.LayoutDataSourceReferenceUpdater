@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Sc.Modules.Events.LayoutDataSourceReferenceUpdater</id>
+    <version>1.0.0</version>
+    <title>Sc.Modules.Events.LayoutDataSourceReferenceUpdater</title>
+    <authors>Martijn.Bos</authors>
+    <owners></owners>
+    <description>
+      Module that registers an event that corrects the data sources of a Sitecore tree when copied
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+      Module that registers an event that corrects the data sources of a Sitecore tree when copied
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/martywoods/Sc.Modules.Events.LayoutDataSourceReferenceUpdater</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright  2016</copyright>
+    <dependencies/>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="bin\" target="lib" />
+    <file src="App_Config\" target="content\App_Config" />
+  </files>
+</package>
