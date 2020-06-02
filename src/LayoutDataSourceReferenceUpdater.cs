@@ -73,7 +73,7 @@
         private void UpdateItemFields(Item itemBeingCopied)
         {
             var layoutField = new LayoutField(itemBeingCopied.Fields[FieldIDs.LayoutField]);
-            if (layoutField.InnerField.HasValue && itemBeingCopied.Languages.Any())
+            if (layoutField.InnerField.GetValue(true, true) != null && itemBeingCopied.Languages.Any())
             {
                 var newItem = FindCorrespondingItem(itemBeingCopied);
                 if (newItem == null)
@@ -113,7 +113,7 @@
             {
                 // Loop all datasources, if sources is child tree FindCorrespondingItem and replace
                 var layoutField = new LayoutField(itemVersion.Fields[fieldId]);
-                if (!layoutField.InnerField.HasValue)
+                if (layoutField.InnerField.GetValue(true, true) == null)
                 {
                     return newItem;
                 }
